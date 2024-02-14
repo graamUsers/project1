@@ -16,9 +16,16 @@ const LicenseTypes = sequelize.define('licenseTypes', {
     type: DataTypes.INTEGER,
     allowNull: false
   },
+  businessCategoryId:{
+    type: DataTypes.INTEGER,
+    allowNull: false
+  },
   filterId:{
     type: DataTypes.STRING,
     allowNull: false
+  },
+  validity:{
+    type: DataTypes.INTEGER,
   }
 }, {
     timestamps: false
